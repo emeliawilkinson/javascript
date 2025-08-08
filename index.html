@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>todo</title>
+    </head>
+    <body class="body">
+        <div class="todo-box">
+            <h1 class="h1">todo</h1>
+            <!-- Set input type to text, assign it an id of taskInput so the 
+            .js file can find it. Add placeholder text to go in the box before 
+            a user enters text -->
+            <input class="input" type="text" id="taskInput" placeholder="Enter task here">
+            <!-- This line says when users click the button that says "Add Task", 
+            perform the addTask function specified in the .js file. -->
+            <button class="button" onclick="addTask()">Add Task</button>
+            <!-- Unordered list assined an id of taskList so it can be found 
+            by the function specified in the javascript file. -->
+            <ul class="ul" id="taskList"></ul>
+            <!-- Loads the javascript file so the browser 
+             can run the addTask() function when the button is clicked -->
+            <script src="todo.js"></script>
+        </div>
+    </body>
+</html>
